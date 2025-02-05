@@ -8,7 +8,7 @@ import threading
 from keep_alive import keep_alive
 keep_alive()
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7784809343:AAHLXLQcaeqd4TkfQuSt8Z_XaH_O1t07xZE')
+bot = telebot.TeleBot('7784809343:AAHiweYumB67l5zMQ3GwPK-amX0O9GLbYMw')
 
 # Admin user IDs
 admin_id = ["5027022179"]
